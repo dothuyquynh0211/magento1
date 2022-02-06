@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<preference for="AHT\SalesAgent\Api\SaleAgentRepositoryInterface" type="AHT\SalesAgent\Model\SaleAgentRepository"/>
+	<preference for="AHT\SalesAgent\Api\Data\SaleAgentInterface" type="AHT\SalesAgent\Model\SaleAgent"/>
+	<preference for="AHT\SalesAgent\Api\Data\SaleAgentSearchResultsInterface" type="Magento\Framework\Api\SearchResults"/>
+	<!-- <virtualType name="AHT\SalesAgent\Model\ResourceModel\SaleAgent\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+		<arguments>
+			<argument name="mainTable" xsi:type="string">testSaleAgent</argument>
+			<argument name="resourceModel" xsi:type="string">AHT\SalesAgent\Model\ResourceModel\SaleAgent\Collection</argument>
+		</arguments>
+	</virtualType> -->
+	<!-- <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+		<arguments>
+			<argument name="collections" xsi:type="array">
+				<item name="salesagent_salesagent_listing_data_source" xsi:type="string">AHT\SalesAgent\Model\ResourceModel\SaleAgent\Grid\Collection</item>
+			</argument>
+		</arguments>
+	</type> -->
+
+	<type name="AHT\SalesAgent\Model\ResourceModel\SaleAgent\Grid\Collection1234">
+		<arguments>
+			<argument name="mainTable" xsi:type="string">testSaleAgent</argument>
+			<argument name="resourceModel" xsi:type="string">AHT\SalesAgent\Model\ResourceModel\SaleAgent\Collection</argument>
+		</arguments>
+	</type>
+
+	<type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+		<arguments>
+			<argument name="collections" xsi:type="array">
+				<item name="salesagent_salesagent_listing_data_source" xsi:type="string">AHT\SalesAgent\Model\ResourceModel\SaleAgent\Grid\Collection1234</item>
+			</argument>
+		</arguments>
+	</type>
+	<preference for="Magento\Theme\Block\Html\Header" type="AHT\SalesAgent\Block\Frontend\Header" />
+
+</config>

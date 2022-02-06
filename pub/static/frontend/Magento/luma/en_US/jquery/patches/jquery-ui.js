@@ -1,0 +1,1 @@
+/Users/quynhdt/www/magento1/lib/web/jquery/patches/jquery-ui.js

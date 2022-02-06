@@ -1,0 +1,1 @@
+/Users/quynhdt/www/magento1/vendor/magento/module-swatches/view/base/web/js/swatch-renderer.js

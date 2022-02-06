@@ -1,0 +1,1 @@
+/Users/quynhdt/www/magento1/lib/web/mage/translate-inline.js

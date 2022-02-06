@@ -1,0 +1,24 @@
+<div class="field phone">
+    <label for="phone" class="label"><span><?= $escaper->escapeHtml(__('Phone Number')) ?></span></label>
+    <div class="control">
+        <input type="text" name="phone"  id="phone" >
+    </div>
+</div>
+<div class="field organization">
+    <label for="organization" class="label"><span><?= $escaper->escapeHtml(__('Organization Name')) ?></span></label>
+    <div class="control">
+        <input type="text" name="organization"  id="organization" >
+    </div>
+</div>
+<div class="field company_type">
+    <label for="company" class="label"><span><?= $escaper->escapeHtml(__('Company Type')) ?></span></label>
+    <div class="control">
+    <select id="company_type" name="company_type">
+                <option value="" >Please select</option>
+                <option value="M">CBD Manufacturer</option>
+                <option value="B">CBD Brand and Marketing company</option>
+                <option value="C">CBD Extractor</option>
+                <option value="O">Other</option></option>
+            </select>
+    </div>
+</div>

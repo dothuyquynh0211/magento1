@@ -1,0 +1,1 @@
+/Users/quynhdt/www/magento1/vendor/magento/module-translation/view/base/web/js/mage-translation-dictionary.js
